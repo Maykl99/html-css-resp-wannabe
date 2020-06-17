@@ -1,0 +1,173 @@
+*{
+  box-sizing: border-box;
+}
+
+.row {
+  width: 992px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+}
+
+/* BLOCCO LEZIONI */
+#lezioni .row>.left,
+#lezioni .row>.right {
+  width: 50%;
+  float: left;
+}
+
+#lezioni .row img {
+  /* per centrare orizzontalmente */
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#lezioni {
+  text-align: center;
+}
+
+/* BLOCCO STEPS */
+#steps .row>.left,
+#steps .row>.central,
+#steps .row>.right {
+  float: left;
+  width: 33%;
+}
+
+#steps {
+  text-align: center;
+}
+
+/* BLOCCO PERCHE */
+#why {
+  text-align: center;
+}
+
+#why .row>.first,
+#why .row>.second,
+#why .row>.third {
+  width: 100%;
+  margin-top: 80px;
+}
+
+#why .row img {
+  background-color: #428bca;
+  border-radius: 50%;
+  padding: 30px
+}
+
+/* COMMON */
+.row::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.container.grey {
+  background-color: #f9f9f9;
+}
+
+img {
+  height: 200px;
+}
+
+.clear {
+  clear: both;
+}
+
+
+@media screen and (max-width: 400px){  /* dispositivi mobile */
+  
+  .row{
+    width: 300px;
+    margin: 0 auto;
+  }
+
+
+   #lezioni .row>.left,
+   #lezioni .row>.right {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  #steps .row > .left, #steps .row > .central, #steps .row > .right {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .first hr, .second hr{
+    margin-top: 40px;
+  }
+
+  .third{
+    margin-bottom: 10px;
+  }
+
+
+
+  #why .row > .first, #why .row > .second, #why .row > .third {
+    margin-top: 40px;
+  }
+
+  .right img{
+    height: 160px;
+  }
+}
+
+@media screen and (min-width: 401px) and (max-width: 768px){  /* dispositivi tablet */
+
+  .row{
+    width: 680px;
+    margin-top: 30px;
+  }
+
+  .row h1{
+    padding-bottom: 20px;
+  }
+
+  #steps .row > .left, #steps .row > .central{
+    float: left;
+    width: 50%;
+    margin-bottom: 40px;
+  }
+
+  #steps .row > .right{
+    margin: auto;
+    float: none;
+  }
+
+  .container.grey {
+    background-color: #f0e2e2;
+    overflow: hidden;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+  }
+
+  #why .row > .first, #why .row > .second, #why .row > .third {
+    width: calc(100% / 3 );
+    margin-top: 10px;
+    float: left;
+    border-right: 1px solid black;
+  }
+
+  #why .row > .first div, #why .row > .second div, #why .row > .third div{
+    width: 90%;
+    padding-left: 20px;
+  }
+
+  #why .row > .third:not(last-child){
+    border-right: none;
+  }
+
+  #why .row img{
+    height: 120px;
+  }
+
+  #why .row hr{
+    display: none;
+  }
+
+}
