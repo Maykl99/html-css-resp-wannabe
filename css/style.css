@@ -96,6 +96,10 @@ img {
     margin-bottom: 40px;
   }
 
+  .row h1{
+    padding-top: 15px;
+  }
+
   .first hr, .second hr{
     margin-top: 40px;
   }
@@ -103,8 +107,6 @@ img {
   .third{
     margin-bottom: 10px;
   }
-
-
 
   #why .row > .first, #why .row > .second, #why .row > .third {
     margin-top: 40px;
@@ -150,12 +152,8 @@ img {
     width: calc(100% / 3 );
     margin-top: 10px;
     float: left;
-    border-right: 1px solid black;
-  }
-
-  #why .row > .first div, #why .row > .second div, #why .row > .third div{
-    width: 90%;
-    padding-left: 20px;
+    padding: 10px;
+    /* border-right: 1px solid black; */
   }
 
   #why .row > .third:not(last-child){
